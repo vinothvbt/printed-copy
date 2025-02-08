@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Your Payment</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Complete Your Payment</h2>
+        <div class="product-info">
+            <h3>Product: Printed-copy</h3>
+            <p>This tool used to enable copying that makes evrything  easier.(even if a site didn't alows to copy, using this tool you can now copy!)</p>
+            <ul>
+                <li>no limits</li>
+                <li>Lifetime uses</li>
+            </ul>
+            <p><strong>Price:</strong> ₹35 (one-time payment)</p>
+        </div>
+        <div class="payment-form">
+            <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_PtIHE5NKEA6maa" async> </script> </form>        </div>
+    </div>
+
+    <script>
+        function getQueryParam(name) {
+            let params = new URLSearchParams(window.location.search);
+            return params.get(name);
+        }
+
+        // let macAddress = getQueryParam("mac"); 
+        // if (macAddress) {
+        //     localStorage.setItem("macAddress", macAddress); 
+        //     document.getElementById("macDisplay").innerText = macAddress;
+        // }
+    </script>
+
+</body>
+
+</html>
